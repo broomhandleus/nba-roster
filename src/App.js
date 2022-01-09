@@ -2,14 +2,12 @@ import React from "react";
 import "./styles.css";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import Teams from "./components/Teams";
 
 export default function App() {
   return (
     <Provider store={store}>
-      <div className="App">
-        <h1>NBA Roster Project</h1>
-        <h2>Read instructions in README.md</h2>
-      </div>
+      <Teams />
     </Provider>
   );
 }
